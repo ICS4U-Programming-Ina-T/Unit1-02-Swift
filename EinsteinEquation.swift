@@ -41,7 +41,9 @@ do {
     let massDouble = Double(massString!) ?? 0
     // checks for negative values
     if massDouble > 0 {
+        // calculates energy
         let energy = massDouble * (pow(speedOfLight, 2))
+        // calculates kiloton amount
         let kiloton = energy * joulesInKilo
         print("\(massDouble)kg of mass would produce \(energy)J of energy.")
         print("Rougly \(kiloton) kiloton bombs are equal to this amount of energy in Joules.")
