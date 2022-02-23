@@ -11,10 +11,12 @@
 
 import Foundation
 
+// stores excpetion at runtime
 enum MyError: Error {
     case runtimeError(String)
 }
 
+// function that throws exception
 func catchString() throws {
     throw MyError.runtimeError("Invalid entry!")
 }
