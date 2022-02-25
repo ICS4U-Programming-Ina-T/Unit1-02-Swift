@@ -40,7 +40,7 @@ do {
     // converting input to double
     let massDouble = Double(massString!) ?? 0
     // checks for negative values
-    if massDouble > 0 {
+    if massDouble >= 0 {
         // calculates energy
         let energy = massDouble * (pow(speedOfLight, 2))
         // calculates kiloton amount
